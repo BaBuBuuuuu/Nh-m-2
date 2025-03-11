@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Du Lịch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Chào mừng đến với Trang Web Du Lịch Việt Nam</h1>
+        <nav>
+            <ul>
+                <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                <li><a href="#dia-diem">Địa điểm du lịch</a></li>
+                <li><a href="#thuvien-anh">Thư viện ảnh</a></li>
+                <li><a href="#danh-gia">Đánh giá</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Phần Giới thiệu -->
+        <section id="gioi-thieu">
+            <h2>Giới thiệu về Du Lịch Việt Nam</h2>
+            <p>Việt Nam là một đất nước xinh đẹp, nổi tiếng với các địa điểm du lịch hấp dẫn, cảnh sắc thiên nhiên tuyệt đẹp
+                và nền văn hóa phong phú. Từ những bãi biển tuyệt đẹp ở Nha Trang, Đà Nẵng đến những thành phố cổ kính như
+                Hà Nội, Huế, mỗi nơi đều có một vẻ đẹp riêng biệt.</p>
+        </section>
+
+        <!-- Phần Địa điểm du lịch -->
+        <section id="dia-diem">
+            <h2>Những Địa Điểm Du Lịch Nổi Tiếng</h2>
+            <div class="dia-diem">
+                <div class="dia-diem-item">
+                    <img src="images/dalat.jpg" alt="Đà Lạt">
+                    <h3>Đà Lạt</h3>
+                    <p>Đà Lạt được biết đến như một thành phố ngàn hoa với khí hậu mát mẻ quanh năm. Đây là một điểm đến lý
+                        tưởng cho những ai yêu thích không gian yên bình và thiên nhiên tươi đẹp.</p>
+                </div>
+                <div class="dia-diem-item">
+                    <img src="images/ha-noi.jpg" alt="Hà Nội">
+                    <h3>Hà Nội</h3>
+                    <p>Hà Nội là thủ đô của Việt Nam, nổi tiếng với những di tích lịch sử, văn hóa lâu đời và ẩm thực đặc
+                        sắc. Đây là nơi du khách có thể trải nghiệm sự kết hợp giữa cổ kính và hiện đại.</p>
+                </div>
+                <div class="dia-diem-item">
+                    <img src="images/nha-trang.jpg" alt="Nha Trang">
+                    <h3>Nha Trang</h3>
+                    <p>Nha Trang là một thành phố biển xinh đẹp với những bãi cát trắng mịn màng và làn nước trong xanh.
+                        Đây là một điểm đến lý tưởng cho những ai yêu thích các hoạt động thể thao dưới nước và thư giãn.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phần Thư viện ảnh -->
+        <section id="thuvien-anh">
+            <h2>Thư Viện Ảnh Du Lịch</h2>
+            <div class="gallery">
+                <img src="images/dalat.jpg" alt="Đà Lạt">
+                <img src="images/ha-noi.jpg" alt="Hà Nội">
+                <img src="images/nha-trang.jpg" alt="Nha Trang">
+            </div>
+        </section>
+
+        <!-- Phần Đánh giá -->
+        <section id="danh-gia">
+            <h2>Đánh Giá của Du Khách</h2>
+            <form action="#" method="post">
+                <label for="rating">Đánh giá: </label>
+                <select id="rating" name="rating">
+                    <option value="5">5 sao</option>
+                    <option value="4">4 sao</option>
+                    <option value="3">3 sao</option>
+                    <option value="2">2 sao</option>
+                    <option value="1">1 sao</option>
+                </select>
+
+                <label for="comment">Nhận xét: </label>
+                <textarea id="comment" name="comment" rows="4" placeholder="Viết nhận xét của bạn..."></textarea>
+
+                <button type="submit">Gửi Đánh Giá</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Du Lịch Việt Nam. Tất cả quyền lợi được bảo vệ.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
